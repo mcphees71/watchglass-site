@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2025-2026 Strategic Task Solutions, LLC. All rights reserved. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform - Watchglass C5ISR</title>
+<meta name="description" content="The Watchglass C5ISR platform: live full-motion video, a moving-map common operational picture, detection and analytics, AI reasoning in your enclave, reporting with analytic rigor, and open standards - fused on one screen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Watchglass C5ISR home">
+      <span class="reticle" aria-hidden="true"><i></i><i></i><i></i><i></i><u></u><u></u><u></u><u></u><b></b></span>
+      <span>WATCHGLASS C5ISR<small>by Strategic Task Solutions</small></span>
+    </a>
+    <button class="navtoggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+    <nav id="nav">
+      <a href="platform.html" class="active">Platform</a>
+      <a href="suite.html">Mission Suite</a>
+      <a href="security.html">Security</a>
+      <a class="btn" href="request.html">Request a demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <p class="kicker">The Platform</p>
+    <h1>One screen for the whole picture.</h1>
+    <p class="lede">Watchglass fuses live full-motion video, the moving-map picture, detection, analytics, reasoning, and reporting into a single operational view - so the operator acts on one picture instead of stitching five tools together.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <p class="kicker">Live full-motion video</p>
+      <h2>Every sensor, on the map.</h2>
+      <p>Full-motion video plays alongside the moving map with the sensor footprint drawn live, so the screener always knows what the camera is looking at and where it sits in the world. MISB / STANAG KLV metadata drives the footprint, slews, and track history.</p>
+      <ul class="ticks">
+        <li><strong>EO / IR feeds</strong> with live footprint and slew-to-cue.</li>
+        <li><strong>Multi-channel</strong> - several feeds and screens at once.</li>
+        <li><strong>KLV-driven</strong> geo-registration and track history.</li>
+      </ul>
+    </div>
+    <div class="figframe contain"><img src="assets/wg-execute.jpg" alt="Live full-motion video with sensor footprint on the moving map" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap two">
+    <div class="figframe contain"><img src="assets/wg-cop.jpg" alt="Watchglass common operational picture" loading="lazy"></div>
+    <div>
+      <p class="kicker">Common operational picture</p>
+      <h2>One map, every track and graphic.</h2>
+      <p>Aircraft, ground tracks, control measures, airspace, and collection all live on a single 2D and 3D moving map. Symbology follows MIL-STD-2525 / NATO APP-6, and the picture is shared live across every connected operator.</p>
+      <ul class="ticks">
+        <li><strong>2D and 3D terrain</strong> anywhere in the world, offline-capable.</li>
+        <li><strong>MIL-STD-2525 / APP-6</strong> symbology and Cursor-on-Target / TAK.</li>
+        <li><strong>Shared live</strong> - one picture for the whole team.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <p class="kicker">Detection, analytics &amp; learned normal</p>
+      <h2>Cueing that points the eye, never positive ID.</h2>
+      <p>Detection, movement, and anomaly cues draw the screener to what is worth a look without cluttering the screen or claiming identification. Watchglass learns each area's normal and surfaces estimative warnings - every judgment logged, sourced, and reversible.</p>
+      <ul class="ticks">
+        <li><strong>Movement and change cues</strong> - recall over precision, never a hidden candidate.</li>
+        <li><strong>Learned-normal anomalies</strong> - flags what breaks the pattern of life.</li>
+        <li><strong>Estimative, sourced, auditable</strong> - ICD 203 throughout.</li>
+      </ul>
+      <div class="chips">
+        <span class="chip">MTI / Movement</span><span class="chip">Anomaly Detection</span><span class="chip">Source Funnel</span>
+      </div>
+    </div>
+    <div class="figframe contain"><img src="assets/wg-anomaly.jpg" alt="Learned-normal anomaly detection on the moving map" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap two">
+    <div class="figframe contain"><img src="assets/wg-ai.jpg" alt="Watchglass AI watch-floor assistant" loading="lazy"></div>
+    <div>
+      <p class="kicker">AI reasoning in your enclave</p>
+      <h2>An analyst's assistant that never leaves your network.</h2>
+      <p>Ask the operation questions, triage OSINT for relevance, draft a SITREP, and get health and self-healing reasoning - all from an analytic AI that runs unclassified, or on Amazon Bedrock inside your own AWS / GovCloud for classified. The data never leaves the enclave.</p>
+      <ul class="ticks">
+        <li><strong>Watch-floor Q&amp;A and SITREP</strong> over the live operation picture.</li>
+        <li><strong>OSINT relevance triage</strong> and analytics reasoning.</li>
+        <li><strong>Runs in your enclave</strong> - Anthropic API or Bedrock / GovCloud.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <p class="kicker">Reporting &amp; analytic rigor</p>
+      <h2>Products that stand up to scrutiny.</h2>
+      <p>Assessments carry ICD 203 estimative language, source provenance, and an audit trail from first cue to final report. After-action review plays the operation back - planned versus executed - and retains the history so the next operation starts smarter.</p>
+      <ul class="ticks">
+        <li><strong>ICD 203 estimative language</strong> and confidence throughout.</li>
+        <li><strong>Provenance and audit trail</strong> on every judgment.</li>
+        <li><strong>After-action playback</strong> and retained operation history.</li>
+      </ul>
+    </div>
+    <div class="figframe contain"><img src="assets/wg-aar.jpg" alt="Watchglass after-action review" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Open standards, no lock-in</p>
+    <h2>It interoperates with the tools you already field.</h2>
+    <p class="lede">Open standards in and out, so Watchglass fits your architecture instead of replacing it.</p>
+    <div class="chips" style="margin-top:22px">
+      <span class="chip">MISB / STANAG KLV</span>
+      <span class="chip">Cursor-on-Target / TAK</span>
+      <span class="chip">MIL-STD-2525 / APP-6</span>
+      <span class="chip">OGC API</span>
+      <span class="chip">GeoJSON / KML</span>
+      <span class="chip">ICD 203</span>
+      <span class="chip">SRT / RTSP video</span>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>See the platform run on your data.</h2>
+    <p class="lede" style="margin:0 auto">A scoped demonstration or pilot in your environment - the fastest way to judge it.</p>
+    <div class="cta"><a class="btn" href="request.html">Request a demonstration</a><a class="btn ghost" href="suite.html">See the mission suite</a></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Watchglass C5ISR</h4>
+      <p class="owner"><span class="reticle" aria-hidden="true"><i></i><i></i><i></i><i></i><u></u><u></u><u></u><u></u><b></b></span> A product of <strong>Strategic Task Solutions, LLC</strong>. Wholly STS-owned intellectual property, developed at private expense.</p>
+      <p class="owner">CAGE 12RL1 &middot; UEI MCDXGW3NWMM4 &middot; SAM registered</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="platform.html">Platform</a><a href="suite.html">Mission Suite</a><a href="security.html">Security</a><a href="request.html">Request a demo</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="request.html">Request a demonstration</a>
+      <a href="mailto:scott.mcphee@strategic-task.com">scott.mcphee@strategic-task.com</a>
+      <a href="https://www.strategic-task.com">strategic-task.com</a>
+    </div>
+  </div>
+  <div class="wrap legal">
+    &copy; 2025-2026 Strategic Task Solutions, LLC. Proprietary. For authorized government and partner audiences. Export-controlled materials are provided only after qualification.
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

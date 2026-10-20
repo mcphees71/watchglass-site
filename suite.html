@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2025-2026 Strategic Task Solutions, LLC. All rights reserved. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mission Suite - Watchglass C5ISR</title>
+<meta name="description" content="Four modes on one codebase - Demonstration, Training, Mission Planning, and Operations - closing the plan, rehearse, execute, assess loop with no hand-offs. See Watchglass C5ISR in action.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Watchglass C5ISR home">
+      <span class="reticle" aria-hidden="true"><i></i><i></i><i></i><i></i><u></u><u></u><u></u><u></u><b></b></span>
+      <span>WATCHGLASS C5ISR<small>by Strategic Task Solutions</small></span>
+    </a>
+    <button class="navtoggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+    <nav id="nav">
+      <a href="platform.html">Platform</a>
+      <a href="suite.html" class="active">Mission Suite</a>
+      <a href="security.html">Security</a>
+      <a class="btn" href="request.html">Request a demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <p class="kicker">The Mission Suite</p>
+    <h1>From planning to execution to after-action - and back.</h1>
+    <p class="lede">Four modes on one codebase - Demonstration, Training, Mission Planning, and Operations. The same picture carries from the plan to the fight to the after-action, and saves for the next operation. No hand-offs between tools.</p>
+  </div>
+</section>
+
+<section class="hasvideo">
+  <video class="sec-video" autoplay muted loop playsinline poster="assets/missions-montage.jpg">
+    <source src="assets/missions-montage.mp4" type="video/mp4">
+  </video>
+  <div class="wrap">
+    <p class="kicker">One loop</p>
+    <h2>Plan. Prepare. Execute. Assess.</h2>
+    <div class="grid g4" style="margin-top:34px">
+      <div class="card"><div class="step">Plan</div><h3>Deliberate planning</h3><p>TLP / MDMP to a five-paragraph OPORD and CONOP, a terrain-driven course-of-action recommendation, and a wargame.</p></div>
+      <div class="card"><div class="step">Prepare</div><h3>Rehearse in 3D</h3><p>An animated 3D ROC-drill rehearsal - the operation plays out phase by phase over the terrain before execution.</p></div>
+      <div class="card"><div class="step">Execute</div><h3>Live operations</h3><p>Promote the order in one step - graphics, collection plan, airspace and command-and-signal go live on the common picture.</p></div>
+      <div class="card"><div class="step">Assess</div><h3>After-action &amp; save</h3><p>Planned-versus-executed review, retained history, and federation so one operation's picture informs the next.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The four modes</p>
+    <h2>One platform, four jobs.</h2>
+
+    <div class="mode" style="margin-top:40px">
+      <div>
+        <div class="no">Mode 01</div>
+        <h3>Mission Planning</h3>
+        <p>Deliberate planning from receipt of mission to a complete order. Build the scheme of maneuver on the map, generate a five-paragraph OPORD and CONOP, get a terrain-driven course-of-action recommendation, wargame it, then rehearse it in 3D before anyone steps off.</p>
+      </div>
+      <div class="figframe contain"><img src="assets/wg-plan.jpg" alt="Watchglass mission planning" loading="lazy"></div>
+    </div>
+
+    <div class="mode flip">
+      <div class="figframe contain"><img src="assets/wg-cop.jpg" alt="Watchglass live operations common picture" loading="lazy"></div>
+      <div>
+        <div class="no">Mode 02</div>
+        <h3>Operations</h3>
+        <p>Run the live mission. Promote the approved order in one step and the graphics, collection plan, airspace, and command-and-signal go live on a shared common operational picture, with full-motion video, cueing, analytics, and the AI assistant on the same screen.</p>
+      </div>
+    </div>
+
+    <div class="mode">
+      <div>
+        <div class="no">Mode 03</div>
+        <h3>Training</h3>
+        <p>A hands-on, scored mirror of Operations, isolated from real data. Analysts work full scenarios through Learn, See, Apply, and Perform stages, earn currency, and build proficiency across every function - with graduated hints and worked examples.</p>
+      </div>
+      <div class="figframe contain"><img src="assets/wg-training.jpg" alt="Watchglass training mode" loading="lazy"></div>
+    </div>
+
+    <div class="mode flip">
+      <div class="figframe contain"><img src="assets/wg-roc.jpg" alt="Watchglass 3D rehearsal" loading="lazy"></div>
+      <div>
+        <div class="no">Mode 04</div>
+        <h3>Demonstration</h3>
+        <p>A guided, safe sandbox that shows the whole capability on real example data - every tour stop puts the actual thing on screen. The fastest way to see what Watchglass does end to end, from planning through execution to after-action.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">See it in action</p>
+    <h2>The software, screen by screen.</h2>
+    <p class="lede">A live look at the platform - planning, rehearsal, live operations, analytics, and after-action.</p>
+    <div class="show" id="wgshow" style="margin-top:30px">
+      <div class="show-frame">
+        <div class="slide on"><img src="assets/wg-plan.jpg" data-cap="Deliberate mission planning" alt="Deliberate mission planning"></div>
+        <div class="slide"><img src="assets/wg-roc.jpg" data-cap="3D rehearsal over the terrain" alt="3D ROC-drill rehearsal" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-execute.jpg" data-cap="Live full-motion video and sensor footprint" alt="Live FMV with sensor footprint" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-cop.jpg" data-cap="Common operational picture" alt="Common operational picture" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-ai.jpg" data-cap="AI watch-floor assistant" alt="AI assistant" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-analytics.jpg" data-cap="Analytics and assessment" alt="Analytics and assessment" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-anomaly.jpg" data-cap="Learned-normal anomaly detection" alt="Anomaly detection on the map" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-aar.jpg" data-cap="After-action review" alt="After-action review" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-terrain.jpg" data-cap="Terrain analysis" alt="Terrain analysis" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-training.jpg" data-cap="Training mode" alt="Training mode" loading="lazy"></div>
+        <div class="slide"><img src="assets/wg-alerts.jpg" data-cap="Alerts and cueing" alt="Alerts and cueing" loading="lazy"></div>
+        <button class="show-nav prev" type="button" aria-label="Previous screen">&#8249;</button>
+        <button class="show-nav next" type="button" aria-label="Next screen">&#8250;</button>
+        <div class="show-cap"><span class="ix">01 / 11</span><span class="txt">Deliberate mission planning</span></div>
+      </div>
+      <div class="show-dots" role="tablist" aria-label="Choose a screen"></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Run the whole loop in your environment.</h2>
+    <p class="lede" style="margin:0 auto">A scoped demonstration or pilot, from planning through after-action.</p>
+    <div class="cta"><a class="btn" href="request.html">Request a demonstration</a><a class="btn ghost" href="platform.html">Explore the platform</a></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Watchglass C5ISR</h4>
+      <p class="owner"><span class="reticle" aria-hidden="true"><i></i><i></i><i></i><i></i><u></u><u></u><u></u><u></u><b></b></span> A product of <strong>Strategic Task Solutions, LLC</strong>. Wholly STS-owned intellectual property, developed at private expense.</p>
+      <p class="owner">CAGE 12RL1 &middot; UEI MCDXGW3NWMM4 &middot; SAM registered</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="platform.html">Platform</a><a href="suite.html">Mission Suite</a><a href="security.html">Security</a><a href="request.html">Request a demo</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="request.html">Request a demonstration</a>
+      <a href="mailto:scott.mcphee@strategic-task.com">scott.mcphee@strategic-task.com</a>
+      <a href="https://www.strategic-task.com">strategic-task.com</a>
+    </div>
+  </div>
+  <div class="wrap legal">
+    &copy; 2025-2026 Strategic Task Solutions, LLC. Proprietary. For authorized government and partner audiences. Export-controlled materials are provided only after qualification.
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
