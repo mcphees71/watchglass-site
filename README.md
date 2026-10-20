@@ -35,13 +35,14 @@ Any static host works - no build needed. Recommended:
 link on the STS site back to this domain so the two sites cross-promote. Keep the visual identity consistent
 (the STS navy/gold and the reticle mark) so they read as one family.
 
-## Make the request form live
+## Request form
 
-`request.html` has a form posting to a placeholder endpoint. To activate it, set the form `action` to your
-provider:
-- **Formspree** (fastest): create a form, replace `https://formspree.io/f/REPLACE_WITH_YOUR_ID` with your ID.
-- **Netlify Forms**: add `netlify` to the `<form>` tag and deploy on Netlify.
-- Or route to any backend/CRM you use. Submissions should reach scott.mcphee@strategic-task.com.
+`request.html` is wired to Formspree (`https://formspree.io/f/maqlvvnn`, the same form the STS site uses).
+Submissions carry a hidden `_subject` of "New Watchglass C5ISR demo request" and `source=watchglasstech.com`
+so Watchglass leads are distinguishable in the inbox. A hidden `_gotcha` honeypot filters bots.
+
+To split Watchglass leads into their own stream later, create a dedicated Formspree form and replace the
+`action` URL in `request.html`.
 
 ## IMPORTANT - export control & disclosure
 
