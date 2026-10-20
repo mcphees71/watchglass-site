@@ -7,7 +7,7 @@
   --b: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 body { margin: 0; font-family: var(--b); color: var(--body); background: var(--navy-deep); line-height: 1.6;
   -webkit-font-smoothing: antialiased; font-size: 16px; }
 h1,h2,h3 { font-family: var(--h); color: var(--ink); line-height: 1.12; letter-spacing: .01em; margin: 0 0 .4em; font-weight: 700; }
@@ -183,12 +183,29 @@ footer.site a:hover { color: var(--gold-soft); }
   .mode { grid-template-columns: 1fr; gap: 24px; }
   .mode.flip > *:first-child { order: 0; }
   .nav nav { position: fixed; inset: 64px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0;
-    background: var(--navy-deep); border-bottom: 1px solid var(--line); padding: 8px 0; transform: translateY(-120%); transition: .2s; }
-  .nav nav.open { transform: translateY(0); }
-  .nav nav a { padding: 12px 24px; }
-  .nav nav .btn { margin: 8px 24px; text-align: center; }
+    background: var(--navy-deep); border-bottom: 1px solid var(--line); padding: 10px 0 14px;
+    opacity: 0; visibility: hidden; transform: translateY(-8px); pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease, visibility .2s; box-shadow: 0 16px 30px rgba(0,0,0,.4); }
+  .nav nav.open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+  .nav nav a { padding: 13px 24px; }
+  .nav nav .btn { margin: 10px 24px 4px; text-align: center; }
   .navtoggle { display: inline-flex; margin-left: auto; background: none; border: 1px solid var(--line); color: var(--ink);
     border-radius: 6px; padding: 7px 10px; cursor: pointer; }
   .g2,.g3,.g4,.two,.facts { grid-template-columns: 1fr; }
-  footer.site .wrap { grid-template-columns: 1fr; }
+  footer.site .wrap { grid-template-columns: 1fr; gap: 26px; }
+}
+@media (max-width: 680px) {
+  :root { --max: 100%; }
+  .wrap { padding: 0 20px; }
+  section { padding: 54px 0; }
+  .hero .wrap { padding: 92px 20px 60px; }
+  .band { padding: 58px 0; }
+  .two { gap: 28px; }
+  .mode { gap: 22px; }
+  .mode + .mode { margin-top: 40px; }
+  .grid { gap: 14px; }
+  .hero .cta, .band .cta, section .cta { width: 100%; }
+  .hero .cta .btn, .band .cta .btn, .cta .btn { flex: 1 1 auto; text-align: center; }
+  .show-cap { font-size: .82rem; padding: 12px 14px; }
+  .show-nav { width: 34px; height: 34px; }
 }
