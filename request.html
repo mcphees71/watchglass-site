@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2025-2026 Strategic Task Solutions, LLC. All rights reserved. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a demonstration - Watchglass C5ISR</title>
+<meta name="description" content="Request a Watchglass C5ISR demonstration or scoped pilot, and access to the detailed capability materials. For authorized government and partner audiences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Watchglass C5ISR home">
+      <span class="reticle" aria-hidden="true"><i></i><i></i><i></i><i></i><u></u><u></u><u></u><u></u><b></b></span>
+      <span>WATCHGLASS C5ISR<small>by Strategic Task Solutions</small></span>
+    </a>
+    <button class="navtoggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+    <nav id="nav">
+      <a href="index.html#platform">Platform</a>
+      <a href="index.html#suite">Mission suite</a>
+      <a href="index.html#why">Why Watchglass</a>
+      <a href="index.html#government">For government</a>
+      <a class="btn" href="request.html">Request a demo</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <p class="kicker">Request access</p>
+      <h2>Request a demonstration or a scoped pilot.</h2>
+      <p>Tell us your mission problem in your words and we will arrange a demonstration and provide the detailed capability materials. A live demonstration is arranged after qualification.</p>
+      <p class="note">Watchglass C5ISR is a command, control and ISR capability. Detailed technical materials and the live demonstration are provided only to <strong>authorized government and partner audiences</strong> and may be subject to U.S. export-control (EAR / ITAR) requirements. Access is qualified before it is granted.</p>
+      <div class="facts" style="margin-top:20px">
+        <span><b>Email</b> <a href="mailto:scott.mcphee@strategic-task.com">scott.mcphee@strategic-task.com</a></span>
+      </div>
+      <div class="facts"><span><b>Phone</b> (217) 899-8863</span><span><b>CAGE</b> 12RL1</span><span><b>UEI</b> MCDXGW3NWMM4</span></div>
+    </div>
+
+    <div>
+      <!-- To make this form live: set action to your form endpoint (e.g. Formspree / Netlify Forms). See README. -->
+      <form class="form" id="req" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" required autocomplete="name">
+        <label for="org">Organization / unit</label>
+        <input id="org" name="organization" required>
+        <label for="email">Government / organization email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+        <label for="country">Country / affiliation</label>
+        <input id="country" name="country" placeholder="e.g. United States - DoD" required>
+        <label for="interest">What are you trying to do?</label>
+        <textarea id="interest" name="interest" rows="4" placeholder="The mission problem in your words, and whether you want a demo, a pilot, or the capability materials."></textarea>
+        <button class="btn" type="submit">Request a demonstration</button>
+        <p class="owner" style="margin:14px 0 0; font-size:.82rem">By submitting, you confirm you are requesting on behalf of a government or authorized partner organization.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap legal">
+    &copy; 2026 Strategic Task Solutions, LLC (SDVOSB) &middot; CAGE 12RL1 &middot; UEI MCDXGW3NWMM4 &middot; Proprietary. For authorized government and partner audiences.
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
