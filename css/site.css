@@ -52,10 +52,10 @@ header.nav { position: sticky; top: 0; z-index: 50; background: rgba(14,26,48,.8
 .navtoggle { display: none; }
 
 /* hero */
-.hero { position: relative; overflow: hidden; }
-.hero::before { content: ""; position: absolute; inset: 0; background: url("../assets/hero-globe.jpg") center/cover no-repeat; opacity: .55; }
-.hero::after { content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(14,26,48,.72), rgba(14,26,48,.9)); }
+.hero { position: relative; overflow: hidden; background: var(--navy-deep); }
+.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .55; z-index: 0; pointer-events: none; }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, rgba(14,26,48,.68), rgba(14,26,48,.92)); }
 .hero .wrap { position: relative; z-index: 1; padding: 92px 24px 84px; }
 .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: .02em; margin-bottom: .18em; }
 .hero .tag { font-family: var(--h); font-size: clamp(1.2rem, 2.6vw, 1.7rem); color: var(--gold-soft); font-weight: 600; margin-bottom: .7em; }
@@ -64,6 +64,11 @@ header.nav { position: sticky; top: 0; z-index: 50; background: rgba(14,26,48,.8
 
 /* sections */
 section { padding: 76px 0; border-top: 1px solid var(--line); }
+section.hasvideo { position: relative; overflow: hidden; background: var(--navy-deep); }
+.sec-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .28; z-index: 0; pointer-events: none; }
+section.hasvideo::after { content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, rgba(14,26,48,.86), rgba(14,26,48,.78) 40%, rgba(14,26,48,.92)); }
+section.hasvideo .wrap { position: relative; z-index: 1; }
 section.alt { background: var(--navy); }
 .grid { display: grid; gap: 22px; }
 .g2 { grid-template-columns: repeat(2, 1fr); }
